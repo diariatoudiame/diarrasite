@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startup Landing</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="télécharger.svg" alt="Startup Landing Logo">
+           
+        </div>
+        <ul class="nav-links">
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#Testimonials">Testimonials</a></li>
+            <li><a href="#News">News</a></li>
+        </ul>
+        <a href="#" class="register-btn">Register Now</a>
+    </nav>
+
+    <section class="hero" id="Home">
+        <div class="hero-content">
+            <h1>Great software is built with amazing developers</h1>
+            <p>We help build and manage a team of world-class developers to bring your vision to life</p>
+            <form class="subscribe-form">
+                <input type="email" placeholder="Subscribe newsletter">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+        <div class="hero-image">
+            <img src="banner-image-1-1-d9080972e9bafe1029b1867172a79135-removebg-preview.png" alt="">
+        </div>
+    </section>
+
+    <div class="sponsors">
+        <span style="color: gray;">Sponsored by:</span>
+        <img src="Capture4-removebg-preview.png" alt="">
+        <img src="Google_2015_logo.svg.webp" alt="">
+        <img src="dropbox-logo.png" alt="">
+    </div>
+
+    <section class="features-section" id="Services">
+        <h3 class="features-title">Quality features</h3>
+        <h2 class="features-subtitle">Meet exciting feature of app</h2>
+        <div class="features-grid">
+            <div class="feature-item">
+                <div class="feature-icon" style="background-color: #FFCC40;">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTUwIDE4Ljc1bC0xLjY5IDEuNjlhMTIuNSAxMi41IDAgMDEtMy4yNSAyLjM0MmwtMy41NzIgMS43ODdMMjUuNDMgOC41MTNsMS43ODctMy41NzNhMTIuNTA0IDEyLjUwNCAwIDAxMi4zNDEtMy4yNUwzMS4yNSAwIDUwIDE4Ljc1ek0zNy4yNTkgMjkuMTc4Yy0zLjkyNSA2LjE5Ni0yLjg4NCAxMS40NDctMi44ODQgMTEuNDQ3TDAgNTBsOS4zNzUtMzQuMzc1czUuMjUxIDEuMDQgMTEuNDQ3LTIuODg0TDM3LjI2IDI5LjE3OHpNMTIuNSAzMi44MTJhNC42ODggNC42ODggMCAxMDkuMzc1IDAgNC42ODggNC42ODggMCAwMC05LjM3NSAweiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==" alt="">
+                </div>
+                <h4 class="feature-title">Unlimited Customization</h4>
+                <p class="feature-description">Get your blood tests delivered at home collect a sample from the your blood tests.</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon" style="background-color: #25D9D9;">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEiIGhlaWdodD0iMzIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTUwLjQ3OSAyNy41ODlsLS4xMi0zLjczNWEyLjM3IDIuMzcgMCAwMC0yLjQ0Mi0yLjNsLS41MDcuMDE1YTIxLjI4MiAyMS4yODIgMCAwMC02LjE2NC0xMC42ODZsLS4wMzItLjAzYTIxLjM2MiAyMS4zNjIgMCAwMC02LjQ5LTQuMjA2bDYuNTUtLjJhNC40IDQuNCAwIDAwOC41LTEuNzMyIDQuNDE1IDQuNDE1IDAgMDAtMi44NC0zLjk4OEE0LjM1MSA0LjM1MSAwIDAwNDUuMjM3LjQ1YTQuNCA0LjQgMCAwMC00LjA1OCAzLjA0NWwtMTEuNzkxLjM1My0uMDEzLS40YTIuMzY5IDIuMzY5IDAgMDAtMi40NDMtMi4zbC0zLjc3NC4xMDVhMi4zNTcgMi4zNTcgMCAwMC0yLjI5MiAyLjQzOGwuMDEzLjQtMTEuNzkxLjM1NGE0LjQgNC40IDAgMDAtOC41IDEuNzMyQTQuNCA0LjQgMCAwMDkuMTc0IDcuMzlsNi41NDktLjJBMjEuNDUgMjEuNDUgMCAwMDQuMDExIDIyLjg0MmwtLjYzLjAxOWEyLjM3NyAyLjM3NyAwIDAwLTIuMyAyLjQ0NmwuMTE5IDMuNzVhMi4zNjggMi4zNjggMCAwMDIuNDQzIDIuM2wzLjc1MS0uMTEyYTIuMzc4IDIuMzc4IDAgMDAyLjMtMi40NDZsLS4xMi0zLjc1MWEyLjM2NiAyLjM2NiAwIDAwLTIuNDQyLTIuM2gtLjEwOEExOC41MjcgMTguNTI3IDAgMDEyMS4yMzEgOC4zODJhMi4zNjcgMi4zNjcgMCAwMDIuMjE1IDEuMzVsMy43NTEtLjExMmEyLjM3IDIuMzcgMCAwMDIuMTIyLTEuNDggMTguNiAxOC42IDAgMDExNS4wOTMgMTMuNDg4bC0uMjMxLjAwN2EyLjM3OCAyLjM3OCAwIDAwLTIuMyAyLjQ0NmwuMTE5IDMuNzVhMi4zNjkgMi4zNjkgMCAwMDIuNDQzIDIuM2wzLjc1LS4xMTJhMi4zNTQgMi4zNTQgMCAwMDIuMjg2LTIuNDN6bS00My43NTMuNzU4bC0yLjYyOS4wOC0uMDg0LTIuNjMgMi42MjktLjA3OS4wODQgMi42M3ptMzguNTgzLTI0Ljk2YTEuNDU2IDEuNDU2IDAgMTEtMS4zMTguOTQgMS40NzIgMS40NzIgMCAwMTEuMzE4LS45NHpNNS4wMjYgNy41MjVhMS40NTYgMS40NTYgMCAxMS0uMDgtMi45MTMgMS40NTYgMS40NTYgMCAwMS4wNzkgMi45MTR6bTE4Ljg3My0uNzE5bC0uMDg0LTIuNjI5IDIuNjI5LS4wNzkuMDQyIDEuMzA3LjA0MiAxLjMwNy0yLjYyOS4wOTR6bTIxLjAwNiAyMC4zODhsLS4wODQtMi42MjkgMi42MjktLjA3OC4wODQgMi42MjktMi42MjkuMDc4eiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==" alt="">
+                </div>
+                <h4 class="feature-title">Vector shape & resizable</h4>
+                <p class="feature-description">Get your blood tests delivered at home collect a sample from the your blood tests.</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon" style="background-color: #0898E7;">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDYiIGhlaWdodD0iNDYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGZpbGw9InVybCgjcGF0dGVybjApIiBkPSJNMCAwaDQ2djQ2SDB6Ii8+PGRlZnM+PHBhdHRlcm4gaWQ9InBhdHRlcm4wIiBwYXR0ZXJuQ29udGVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgd2lkdGg9IjEiIGhlaWdodD0iMSI+PHVzZSB4bGluazpocmVmPSIjaW1hZ2UwIiB0cmFuc2Zvcm09InNjYWxlKC4wMjE3NCkiLz48L3BhdHRlcm4+PGltYWdlIGlkPSJpbWFnZTAiIHdpZHRoPSI0NiIgaGVpZ2h0PSI0NiIgeGxpbms6aHJlZj0iZGF0YTppbWFnZS9wbmc7YmFzZTY0LGlWQk9SdzBLR2dvQUFBQU5TVWhFVWdBQUFDNEFBQUF1Q0FZQUFBQlh1U3MzQUFBRjgwbEVRVlJvUSsyWmFZZ2NSUlRIZi8vTzZrN1BtcDJlcVBFK2dtZFVCQlhqalFlZVVWRVJGQlN2bUlCNGEvQytqWGZpSFUrTVI0Z0tpcmQ0RWpWUkRJcUtvQjlFOUlNRU1VYVQyZG5OenN5aTAwK3F0MmVkek02NTd1eWlXSittcCt1OTkrdFhyMTY5cWhKQWI2OXRFSzdEYk9Ba1FRSjR2K2h4OTZST2ZlUGVqMWY3UFdlYnJlTXgyNHpwZ0NmeFptamNuL2Ixay9yNmJNTmlCMjhDMHlvQVY4czRLcFhVNStNQm5zM1pYaVlXQWR0VzJQOUJZcnA2Q25Zbnh1VTE0RDREcm00YmVFaFAwS1d2cXVuUDV1MEdneHRyMkg1QlBYbjdDZGl5YlhEMUZac1pzOU5KM1Z2WnpjeTg3QUIzWUZ4V1JjWFBEdnhYWVBJNGdTTnhYeXFoUzV6OTFRTzJxMmVjbHVya0NrbWgrNjlHUkt4VUptK0xCS2ZXQUY5dThHU3JIK1hCRklQVFk3a2xCaDlWMCtHSmxjVk9ucDBrWlh2NmJYYzhYZ0syRmp6ZG5XQ1dwRCtkWENadk53dXVLOU94VEtzR2JPY0pJVXVCU2NPR0M4NUkrMXJZS25nMlo5Tk11UGtCeGxWQlVuZlUwOUU3WUR0YXlHS0RUY3Y2TFFoOHpTdzlsM3ZlUEk2WGU1SE4yZDZJdVFiN3h4MS9OTGcxN2V1cFZxR2o0YzNiSWNEaVFXNXVTdnVxTmNub0c3Q3B4WkMzbktlcjJIb2k4RFdyOUgrMllQZUdJY3ZUU2QwVGdidldtN1A5UXZHSisrMkdKZVhybHBGQXR3Sytlc0IyOFVKZUI2YlVzZlZJS3NHRnBiQXA5UnNDeitUdFlNRUh6WGlwMFFjMTQvRytBZHVwT0FpOVRTTjlCczhHQ2M0c2h4OENiOFpZSXdORDhkZ2dWSG9MdGtOb3ZBdHMxWlJPNDhxVXo5eFNwb21qWWxCMFZNRUxkaGpHZS9Ib3pVbjd1bjdvby9wdER6eGVBYlpvQ2hwbUJyNFdWUFp0aThjei9iYWJQQVpYUk9QeUlLbTUwVHhxMGRNU0Y2VVNlcURhQjdZRlBCckJuSjFvc0hWSGtZVVRKK28zbC9MQ01CcUZwand0Y1dFcW9RZWRyc3lBSGVlRmRIY25XQ1RKMmhZcWxSNXFrUEtHT1ZUaS9GUkNEMFVPR0Z5WXZveGd4ZlJVUW0rUENYaVRLVzhJWHVLQ1ZFTHpoK1pFd1E3RmVEOStuaFg0ZXFMdDRObUNiV2ZHaDhCbVRVeEVrN2k0TXFZcmtzYU0wcUxZdGhoM29IMTlOcm5ZRWRYVWh6VUNOemc3N1d0WVhUU200Q3ZNdWphVytxT0psYkZBaVNqOUhWUUx2bDcyR0RQd09PVzlJakUvbGRERERuYWwyWHJyRnFKZDFvSEQ4bkdkbEZkbGZha2ZLbTdYRS9pNnZkSHdWcjVmczhZMituTkNWQlc2RmRHVnBPY0Z2aDUzL1ZhWmRVOG84RnE1NTh0VFhpMWJyZ0Ewc1N4ZXpPcUR5M2d0VkdTa2J2UEVpbEo2aXNJaVo1ZEszRjBtdE5hRWk4UEcxZHlIbEtlOGJNR09ESTFOcWk0MFltcHBGMlRRME9PTm1QOStiNXdjSlBWQ1BLeGZBSHRVQ0R0NHQ1aEVLVzdOR3R2NEQ0OTkwMG05N0o2ekJUdkNqSGVhTVRqYTRDY0ZTYjBZeC9iWERCNXZERy9pM0ZRbmo1Wld2bEtIbm9JZHptREIxYkExQkc4aFZINUpKUlI1SzF1d2M4MklWcnRhemZPWTJ0MnA3eXJmajJhb3REdzVzM2xiYW5CQUxXZ3pMZ2w4SHBSVWJPamFzZzR0VGM1RzI2MUt3NjRJVWhqbDZxRUZMZTZ6Q3ZnaTNzazNGY2VWdXR1V3g3TUZPOXFNRndFL050b0h2Q1Y0b3lQa2c2NHUvZEtLaDhjRXZDZHZicS80TFpCMEJzMTRJSVI1NnllMS9KL0Fsc3UyeGVPcmM3YWxwd2g4SXZCWTRPdWNrdEhmK20zVERtTnllajI1VERQaTFoWndSeFBYMnBzRXZxS050bXZ4QjMwTWJDNDRMZVhydVpHU3R3MjhHbEJQMlo0VHVEWHdkZTIvQTd5RkE2RkdIelMySHY4ZmZOaXhTWHQzUUtONlJyUDI2UDJId010cmdwRnVKRW9UYlRROVhzNGw0NVJVVXM4N08xRnRrY25iVm9LNzNLMWJiUHhMZzh2U3Z0d092ZVUyV3VCdWpRaUwzR25pMkJqaUkwSm11M3NqdVN1NURrWG5GbE1yQ0l1STZVRkMwUmxnSzYwM1ovdUU0dE5ZNXByQTEyMnR5THUrdlFYYlByVG8ySHZEdFdSRlJrV09VQ1puOHlYT3E2clkrQVp4Y2F0R3pkaE5ZbDQ4cEFzTm5tbFZCMFQzcnU1K3MxcjcwRjFldVlKbzh4RW9IaytSbFE1OEJiRFJlRktNd1BZcUIrNU9qODZxSWZ5OVFkMkxweEVZYlVyRWd4bGxkMUtWTXNzVW4rKzV5bTVZdUZqSUNla3V2ZHFVcFZIdUZOOTVMc0VJS2xUbmdXT2lkQmlkcUJwelpFd3o2QkI4SDNyTVMzZXE0ZG5LS1BPdXBTN2JiM3VheHkyQ1hRd21BRzZqUFNmd3RmZ3Y1Y0ovcHZZK09XTUFBQUFBU1VWT1JLNUNZSUk9Ii8+PC9kZWZzPjwvc3ZnPg==" alt="">
+                </div>
+                <h4 class="feature-title">Editing freedom</h4>
+                <p class="feature-description">Get your blood tests delivered at home collect a sample from the your blood tests.</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon" style="background-color: #FF9066">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzkiIGhlaWdodD0iMzkiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTMxLjY4OCAyLjQzOFYwSDcuMzEzdjIuNDM4SDB2OC41M2MwIDYuOTEgNS4yNTUgMTIuNjEyIDExLjk3NyAxMy4zMjggMS40NSAyLjIxMiAzLjE3NiAzLjc2IDUuMDg1IDQuNDg0djIuOTA3YTIuNDM4IDIuNDM4IDAgMDEtMi40MzcgMi40MzhBNC44NzUgNC44NzUgMCAwMDkuNzUgMzloMTkuNWE0Ljg3NSA0Ljg3NSAwIDAwLTQuODc1LTQuODc1IDIuNDM4IDIuNDM4IDAgMDEtMi40MzgtMi40Mzh2LTIuODkxYzEuOTE0LS43MTggMy42MzUtMi4yODcgNS4wODYtNC41QzMzLjc0NSAyMy41OCAzOSAxNy44NzggMzkgMTAuOTdWMi40MzhoLTcuMzEzem0tMjYuODEzIDguNTNWNy4zMTRINy4zN2MuMTg2IDQuMTEyLjg0NSA3Ljg1OCAxLjg3IDExLjA1NC0yLjU5Mi0xLjQ2Ni00LjM2NS00LjIxNS00LjM2NS03LjM5OHpNOS43NSA0Ljg3NlYyLjQzN2gyLjQzOHYyLjQzOGMwIDExLjE4NSAzLjcyMiAyMC4zOTYgOC41MyAyMS43NDgtLjQuMTEzLS44MDQuMTktMS4yMTguMTktNS4zODUgMC05Ljc1LTkuODIyLTkuNzUtMjEuOTM4em0yNC4zNzUgNi4wOTRjMCAzLjE4My0xLjc3MyA1LjkzMi00LjM2NCA3LjM5OCAxLjAyNC0zLjE5NiAxLjY4My02Ljk0MiAxLjg2OS0xMS4wNTVoMi40OTV2My42NTd6IiBmaWxsPSIjZmZmIi8+PC9zdmc+" alt="">
+                </div>
+                <h4 class="feature-title">Best Award history</h4>
+                <p class="feature-description">Get your blood tests delivered at home collect a sample from the your blood tests.</p>
+            </div>
+        </div>
+    </section>
+    <div class="container3">
+        <div class="image">
+            <img src="boost-1-1-8b01f4a1391acb0a8451931525494f8f.png" alt="Businessman on a rocket">
+        </div>
+        <div class="content">
+            <h3>Boost your agencies by choosing Ninja Developers</h3>
+            <p>Create custom landing pages with Shades that convert more visitors than any website, no coding required.</p>
+            <ul class="features">
+                <li>Unlimited design possibility</li>
+                <li>Completely responsive features</li>
+                <li>Easy to customize plugins</li>
+            </ul>
+            <a href="#" class="learn-more">Learn more &gt;</a>
+        </div>
+    </div>
+
+    <section class="new-hero">
+        <div class="new-hero-content">
+            <h3>Leading companies trust us<br>to develop software</h3>
+            <p>We believe it's important for everyone to have access to software<br>especially when it comes to digital learning be navigate.</p>
+            <a href="#" class="explore-btn">Explore Details &gt;</a>
+        </div>
+        <div class="new-hero-video">
+            <video poster="video-a5d739423c306df4e4aea6a860c9c6b2.png">
+                <source src="WhatsApp Video 2024-10-18 at 12.19.49.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <button class="play-button" aria-label="Play video"></button>
+        </div>
+    </section>
+
+    <section class="testimonials" id="Testimonials">
+        <h3>Customer Comments</h3>
+        <h2>Why customers love us</h2>
+        
+        <div class="testimonial-slider">
+            <div class="testimonial-slide">
+                <p class="testimonial-text">Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster.</p>
+                <div class="testimonial-line"></div>
+                <div class="testimonial-authors">
+                    <div class="author" data-index="0">
+                        <img src="télécharger (2).png" alt="Pierre Hackett" class="author-image">
+                        <div class="author-info">
+                            <h4>Pierre Hackett</h4>
+                            <p>VP of Engineering</p>
+                        </div>
+                    </div>
+                    <div class="author" data-index="1">
+                        <img src="télécharger (1).png" alt="Natalia Sanz" class="author-image">
+                        <div class="author-info">
+                            <h4>Natalia Sanz</h4>
+                            <p>Head of Technology</p>
+                        </div>
+                    </div>
+                    <div class="author" data-index="2">
+                        <img src="télécharger.png" alt="Ece Akman" class="author-image">
+                        <div class="author-info">
+                            <h4>Ece Akman</h4>
+                            <p>Senior Marketer</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="customer-support">
+        <div class="content">
+            <h2>Free Customer Support to ensure what you like to expect</h2>
+            <p>We offer a risk-free trial period of up to two weeks. You will only have to pay if you are happy with the developer and wish to continue. If you are unsatisfied, we'll refund payment or fix issues on our dime period customers.</p>
+            <p>If you are happy with the developer and wish to continue. If you are unsatisfied, we'll refund payment or fix issues.</p>
+            <a href="#" class="learn-more">Learn more &gt;</a>
+        </div>
+        <div class="image">
+            <img src="cta-2-1-92c17b59fa88d0f37a14bacdde164b49.png" alt="Customer support representative">
+        </div>
+    </section>
+
+    <section class="tutorials-section" id="News">
+        <div class="section-header">
+            <h4>Quality features</h4>
+            <h2>Tutorials that people love most</h2>
+        </div>
+        <div class="tutorial-cards">
+            <div class="card">
+                <img src="tutorial-1-1-5852a1fd0043b4d81d2b02ad72bc72eb.png" alt="Tutorial 1">
+                <h3>How to work with prototype design with adobe xd featuring tools</h3>
+                <p><span class="comments-count">22</span> Comments</p>
+            </div>
+            <div class="card">
+                <img src="tutorial-1-2-5379cdeafaf0ec1dc273115a9b62e146.png" alt="Tutorial 2">
+                <h3>Create multiple artboard by using figma prototyping development</h3>
+                <p><span class="comments-count">15</span> Comments</p>
+            </div>
+            <div class="card">
+                <img src="tutorial-1-3-24ece39c641db5a2c34c5eb44bdef4c0.png" alt="Tutorial 3">
+                <h3>Convert your web layout theming easily with sketch zeplin extension</h3>
+                <p><span class="comments-count">12</span> Comments</p>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- <div class="hire-banner">
+        <h3>Hire the world’s best developers and designers around!</h3>
+        <a href="#" class="hire-btn">Hire Developers</a>
+    </div> -->
+    <div class="hire-banner">
+        <div class="hire-banner-content">
+            <h3>Hire the world's best developers and designers around!</h3>
+            <a href="#" class="hire-btn">HIRE DEVELOPERS</a>
+        </div>
+    
+    </div>
+    <section class="white-section">
+        <footer class="footer">
+          <div class="footer-logo">
+            <img src="télécharger.svg" alt="Startup Landing Logo">
+           
+          </div>
+          <p class="footer-copyright">© 2024 All right reserved - Design & Developed by RedQ, Inc</p>
+          <nav class="footer-nav">
+            <a href="#home">Home</a>
+            <a href="#advertise">Advertise</a>
+            <a href="#supports">Supports</a>
+            <a href="#marketing">Marketing</a>
+            <a href="#faq">FAQ</a>
+          </nav>
+        </footer>
+      </section>
+    
+    <script>
+        // DEFILEMENT
+        document.addEventListener('DOMContentLoaded', function() {
+    const navLinks = document.querySelectorAll('.nav-links a, a[href^="#"]');
+    const navbarHeight = document.querySelector('.navbar').offsetHeight;
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            const targetId = this.getAttribute('href');
+            const targetSection = document.querySelector(targetId);
+
+            if (targetSection) {
+                const targetPosition = targetSection.getBoundingClientRect().top + window.pageYOffset - navbarHeight;
+
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+});
+        // NAVBAR
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 10) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+        //  VIDEO
+        document.addEventListener('DOMContentLoaded', function() {
+            const video = document.querySelector('.new-hero-video video');
+            const playButton = document.querySelector('.play-button');
+
+            playButton.addEventListener('click', function() {
+                if (video.paused) {
+                    video.play();
+                    playButton.style.display = 'none';
+                } else {
+                    video.pause();
+                    playButton.style.display = 'flex';
+                }
+            });
+
+            video.addEventListener('pause', function() {
+                playButton.style.display = 'flex';
+            });
+
+            video.addEventListener('play', function() {
+                playButton.style.display = 'none';
+            });
+            });
+            // SLIDE
+            document.addEventListener('DOMContentLoaded', function() {
+                const testimonials = [
+                    {
+                        text: "They are doing amazing job with hundred percent customer satisfaction, Love their work and would like to work with them again",
+                        author: "Pierre Hackett",
+                        role: "VP of Engineering"
+                    },
+                    {
+                        text: "Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster.",
+                        author: "Natalia Sanz",
+                        role: "Head of Technology"
+                    },
+                    {
+                        text: "Bring to the table win-win survival strategies to ensure proactive domination. User generated content in real-time will have multiple touchpoints.",
+                        author: "Ece Akman",
+                        role: "Senior Marketer"
+                    }
+                ];
+
+                let currentIndex = 0;
+                const testimonialText = document.querySelector('.testimonial-text');
+                const authors = document.querySelectorAll('.author');
+                const testimonialLine = document.querySelector('.testimonial-line');
+
+                function updateTestimonial(index) {
+                    testimonialText.style.opacity = 0;
+                    testimonialLine.style.transform = `translateX(${index * 100}%)`;
+                    
+                    setTimeout(() => {
+                        testimonialText.textContent = testimonials[index].text;
+                        testimonialText.style.opacity = 1;
+                    }, 300);
+
+                    authors.forEach((author, i) => {
+                        if (i === index) {
+                            author.classList.add('active');
+                        } else {
+                            author.classList.remove('active');
+                        }
+                    });
+                }
+
+                authors.forEach(author => {
+                    author.addEventListener('click', function() {
+                        const index = parseInt(this.getAttribute('data-index'));
+                        currentIndex = index;
+                        updateTestimonial(currentIndex);
+                    });
+                });
+
+                function nextTestimonial() {
+                    currentIndex = (currentIndex + 1) % testimonials.length;
+                    updateTestimonial(currentIndex);
+                }
+
+                // Change testimonial every 5 seconds
+                setInterval(nextTestimonial, 5000);
+
+                // Initialize the first testimonial
+                updateTestimonial(currentIndex);
+            });
+    </script>
+
+
+
+</body>
+</html>
